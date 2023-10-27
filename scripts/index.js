@@ -1,6 +1,9 @@
 let divContainer = document.querySelector("#boxcontainer");
-let squareDiv = document.createElement("div");
-
-divContainer.appendChild(squareDiv)
 
 
+
+for (let i = 0; i < 256 ; i++) {
+  let squareDiv = document.createElement("div");
+  squareDiv.classList.add("square")
+  divContainer.appendChild(squareDiv);
+}
