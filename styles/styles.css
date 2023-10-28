@@ -16,15 +16,18 @@ body {
   align-items: center;
 }
 
-#buttons, #boxcontainer {
+#buttons, #boxcontainer, .square {
   border: 1px solid #74c7ec;
 } /* for debugging purposes*/
 
 #boxcontainer {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 80dvw;
   height: 80dvw;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 #buttons {
@@ -34,8 +37,19 @@ body {
   width: 80dvw;
 }
 
+#slider {
+  flex: 1;
+  margin-right: 20px;
+}
+
 #resetbutton {
   background-color: #313244;
   color: #cdd6f4;
-  margin-left: auto;
+  border: 1px solid #45475a;
+  border-radius: 10px;
+  padding: 5px 15px 5px 15px;
+}
+
+.square {
+  flex: 1;
 }
