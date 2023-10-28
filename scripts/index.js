@@ -11,4 +11,3 @@ for (let i = 0; i < 256 ; i++) {
     squareDiv.classList.add("hoverbox");
   })
 }
-
