@@ -22,8 +22,9 @@ body {
   flex-direction: row;
 }
 
-.square:hover {
+.hoverbox {
   background-color: #74c7ec;
+  transition: all 0.5s ease;
 }
 
 #boxcontainer {
