@@ -16,11 +16,12 @@ body {
   align-items: center;
 }
 
-#buttons, #boxcontainer, .square {
-  border: 1px solid #74c7ec;
-} /* for debugging purposes*/
+.square {
+  border: 1px solid #6c7086;
+}
 
 #boxcontainer {
+  border: 1px solid #6c7086;
   display: grid;
   width: 80dvw;
   height: 80dvw;
@@ -38,6 +39,7 @@ body {
 #slider {
   flex: 1;
   margin-right: 20px;
+  accent-color: #74c7ec;
 }
 
 #resetbutton {

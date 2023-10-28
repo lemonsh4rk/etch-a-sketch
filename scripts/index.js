@@ -3,9 +3,7 @@ let sliderElement = document.querySelector("#slider");
 let resetButton = document.querySelector("#resetbutton")
 
 // default slider value and area
-let defaultSliderValue = sliderElement.value = 16;
-let gridArea = defaultSliderValue * defaultSliderValue;
-
+let defaultSquares = sliderElement.value = 0;
 
 
 sliderElement.addEventListener("change", () => {
@@ -32,7 +30,9 @@ sliderElement.addEventListener("change", () => {
 
 
   resetButton.addEventListener("click", () => {
-
+    gridArea.forEach(square => {
+      square.classList.remove("hoverbox");
+    })
   })
 
 })
