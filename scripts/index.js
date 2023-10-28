@@ -2,9 +2,6 @@ let divContainer = document.querySelector("#boxcontainer");
 let sliderElement = document.querySelector("#slider");
 let resetButton = document.querySelector("#resetbutton")
 
-// default slider value and area
-let defaultSquares = sliderElement.value = 0;
-
 
 sliderElement.addEventListener("change", () => {
   let squares = slider.value;

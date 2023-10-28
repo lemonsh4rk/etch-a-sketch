@@ -15,7 +15,12 @@
 
     <div id="buttons">
 
-      <input type="range" id="slider" min="2" max="100">
+      <div class="slidercontainer">
+        <output id="output">2</output>
+        <input type="range" id="slider" value="2" min="2" max="100" oninput="this.previousElementSibling.value = this.value">
+        
+      </div>
+      
       <button id="resetbutton">Reset</button>
 
     </div>
