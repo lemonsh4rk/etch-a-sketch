@@ -1,12 +1,40 @@
 let divContainer = document.querySelector("#boxcontainer");
 let sliderElement = document.querySelector("#slider");
-let squareDiv = document.createElement("div");
+let resetButton = document.querySelector("#resetbutton")
 
-// default slider value
-sliderElement.value = 16;
+// default slider value and area
+let defaultSliderValue = sliderElement.value = 16;
+let gridArea = defaultSliderValue * defaultSliderValue;
 
-sliderElement.addEventListener("input", () => {
-  console.log(sliderElement.value)
+
+
+sliderElement.addEventListener("change", () => {
+  let squares = slider.value;
+
+  divContainer.innerHTML = "";
+
+  divContainer.style.gridTemplateRows = `repeat(${squares}, 1fr)`;
+  divContainer.style.gridTemplateColumns = `repeat(${squares}, 1fr)`;
+
+  for (let i = 0; i < (squares * squares); i++) {
+    let squareDiv = document.createElement("div");
+    squareDiv.classList.add("square");
+    divContainer.appendChild(squareDiv);
+  }
+
+  let gridArea = document.querySelectorAll(".square");
+
+  gridArea.forEach(square => {
+    square.addEventListener("mouseover", () => {
+      square.classList.add("hoverbox");
+    })
+  })
+
+
+  resetButton.addEventListener("click", () => {
+
+  })
+
 })
 
 

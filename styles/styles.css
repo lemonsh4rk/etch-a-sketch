@@ -21,9 +21,7 @@ body {
 } /* for debugging purposes*/
 
 #boxcontainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
   width: 80dvw;
   height: 80dvw;
   margin-top: 20px;
@@ -50,6 +48,7 @@ body {
   padding: 5px 15px 5px 15px;
 }
 
-.square {
-  flex: 1;
+.hoverbox {
+  background-color: #74c7ec;
+  transition: all 0.1s ease;
 }
