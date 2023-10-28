@@ -1,9 +1,13 @@
 let divContainer = document.querySelector("#boxcontainer");
 let sliderElement = document.querySelector("#slider");
+let squareDiv = document.createElement("div");
 
+// default slider value
+sliderElement.value = 16;
 
-
-
+sliderElement.addEventListener("input", () => {
+  console.log(sliderElement.value)
+})
 
 
 
