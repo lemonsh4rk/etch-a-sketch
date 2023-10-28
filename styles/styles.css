@@ -32,10 +32,9 @@ body {
 #buttons {
   display: flex;
   justify-content: space-between;
-
   margin-top: 20px;
   margin-bottom: 20px;
-  width: 80dvw;
+  width: 80%;
 }
 
 #slider {
@@ -64,4 +63,18 @@ h1, p {
 p {
   color: #a6adc8;
   margin: 10px;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 1200px) {
+  #buttons {
+    width: 70dvh;
+  }
+  #boxcontainer {
+    width: 70dvh;
+    height: 70dvh;
+  }
 }
