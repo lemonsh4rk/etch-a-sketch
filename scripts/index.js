@@ -1,6 +1,15 @@
 let divContainer = document.querySelector("#boxcontainer");
 let sliderElement = document.querySelector("#slider");
 
+
+
+
+
+
+
+
+
+/*
 function getSquares() {
 
   function getSliderValue() {
@@ -29,3 +38,5 @@ sliderElement.addEventListener("input", getSquares())
 function removeSquares() {
   document.querySelectorAll("square").remove();
 }
+
+*/
